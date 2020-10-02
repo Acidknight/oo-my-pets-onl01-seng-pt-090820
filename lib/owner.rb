@@ -11,8 +11,8 @@ def initialize(name)
     @name = name
     @species = "human"
     @@owners << self
-    @dogs = []
-    @cats = []
+    #@dogs = []
+    #@cats = []
   end
 
   def self.all
@@ -32,7 +32,7 @@ def initialize(name)
   end
   
   def dogs 
-    
+    Dog.all.select 
   end 
   
   def cats 
