@@ -44,7 +44,7 @@ def initialize(name)
   end
   
   def buy_dog(name)
-    Dog.new(name, self)
+    Dog.new(name)
   end
   
   def walk_dogs
