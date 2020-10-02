@@ -32,7 +32,7 @@ def initialize(name)
   end
   
   def dogs 
-    Dog.all.select{|o| o = owner}
+    Dog.all.select{|o| o.owner}
   end 
   
   def cats 
