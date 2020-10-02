@@ -7,8 +7,9 @@ class Owner
 
   @@owners = []
 
-def initialize(name)
+def initialize(name, owner)
     @name = name
+    @owner = owner 
     @species = "human"
     @@owners << self
     @dogs = []
