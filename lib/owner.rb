@@ -36,7 +36,7 @@ def initialize(name)
   end 
   
   def cats 
-    Cat.all.select{|o| o.owner}
+    Cat.all.select{|o| o.owner == self}
   end
   
   def buy_cat(name)
