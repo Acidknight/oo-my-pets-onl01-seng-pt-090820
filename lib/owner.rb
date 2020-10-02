@@ -32,11 +32,11 @@ def initialize(name)
   end
   
   def dogs 
-    Dog.all.select{|o| o.owner = self}
+    Dog.all.select{|o| o.owner}
   end 
   
   def cats 
-    Cat.all.select{|o| o.owner = self}
+    Cat.all.select{|o| o.owner}
   end
   
   def buy_cat(name)
