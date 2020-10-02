@@ -52,7 +52,7 @@ def initialize(name)
   end
   
   def sell_pets
-    binding.pry
+    #binding.pry
     @dogs.each do |dog|
       dog.mood = "nervous"
       dog.owner = nil
