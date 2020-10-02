@@ -1,4 +1,5 @@
-require pry
+
+
 class Owner
   
   #attr_accessor :cats, :dogs
