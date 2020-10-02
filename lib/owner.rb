@@ -31,6 +31,14 @@ def initialize(name)
     "I am a #{@species}."
   end
   
+  def dogs 
+    
+  end 
+  
+  def cats 
+    
+  end
+  
   def buy_cat(name)
     Cat.new(name, self)
   end
