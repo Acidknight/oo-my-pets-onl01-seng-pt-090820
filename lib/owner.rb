@@ -48,24 +48,24 @@ def initialize(name)
   end
   
   def walk_dogs
-    @dogs.each do |dog|
+    dogs.each do |dog|
       dog.mood = "happy"
     end
   end
   
   def feed_cats
-    @cats.each do |cat|
+    cats.each do |cat|
       cat.mood = "happy"
     end
   end
   
   def sell_pets
     #binding.pry
-    @dogs.each do |dog|
+    dogs.each do |dog|
       dog.mood = "nervous"
       dog.owner = nil
     end
-    @cats.each do |cat|
+    cats.each do |cat|
       cat.mood = "nervous"
       cat.owner = nil 
     end
@@ -73,6 +73,6 @@ def initialize(name)
   end
   
   def list_pets
-    "I have #{@dogs.count} dog(s), and #{@cats.count} cat(s)."
+    "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
   end
 end
